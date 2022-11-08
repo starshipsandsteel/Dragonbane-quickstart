@@ -1,0 +1,679 @@
+/* Configure Tab Buttons */
+.sheet-main,
+.sheet-Vaesen,
+.sheet-NPC,
+.sheet-HQ, {
+    display: none;
+}
+
+/* DragonBane*/
+.sheet-db_checkbox-small{
+    width: 10px;
+}
+.sheet-db_attriblabel {
+    font-size: xx-small;
+}
+.sheet-db_text_20 {
+    width: 20px;
+}
+.sheet-db_text_30 {
+    width: 30px;
+}
+.sheet-db_text_40 {
+    width: 40px;
+}
+.sheet-db_text_45 {
+    width: 40px;
+}
+.sheet-db_text_50 {
+    width: 50px;
+}
+.sheet-db_text_75 {
+    width: 75px;
+}
+.sheet-db_text_100 {
+    width: 100px;
+}
+.sheet-db_text_110 {
+    width: 110px;
+}
+.sheet-db_text_125 {
+    width: 125px;
+}
+.sheet-db_text_150 {
+    width: 150px;
+}
+.sheet-db_text_250{
+    width:250px;
+}
+.sheet-db_text_275{
+    width:275px;
+}
+.sheet-db_skill_text_30 {
+    background-color: transparent;
+    width: 30px;
+    border-color:#1d1711;
+}
+.sheet-db_skill_text_50 {
+    background-color: transparent;
+    width: 50px;
+    border-color:#000000;
+    border-bottom:10px;
+    border-left:0px;
+    border-right:0px;
+    border-top:0px;
+}
+.sheet-db_skill_text_125 {
+    background-color: transparent;
+    width: 125px;
+    border-color:#000000;
+    border: 0px;
+}
+
+.sheet-db_nametext{
+    width: 275px;
+    height: 50px;
+    text-align:center;
+    background-color: transparent; /*transparent */
+    font-size:x-large;
+    color:#000000;
+    background-image: url("https://i.imgur.com/986InQ6.png");
+    background-size: 275px 40px;
+    border:0px;
+}
+.sheet-db_header{
+    text-align:center;
+    width: 250px;
+    height: 40px;
+    background-color: transparent; /*transparent */
+    color:#ffffff;
+    background-image: url("https://i.imgur.com/e1831WK.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 250px 40px;
+}
+.sheet-db_header_wide{
+    text-align:center;
+    width: 275px;
+    height: 40px;
+    background-color: transparent; /*transparent */
+    color:#ffffff;
+    background-image: url("https://i.imgur.com/e1831WK.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 250px 40px;
+}
+.sheet-db_tinyitems{
+    background-color: transparent; /*transparent */
+    border:0px;
+    padding-top:25px;
+    padding-left:20px;
+    width:200px;
+    height:90px;
+    text-align:left;
+    font-size:normal;
+    color:#000000;
+}
+.sheet-db_header_text_center{
+    background-color: transparent; /*transparent */
+    text-align:center;
+    padding-top:12px;
+     font-size: normal;
+    width: 250px;
+    color:#ffffff;
+    border:0px;
+}
+
+.sheet-db_input_text_small{
+    background-color: transparent; /*transparent */
+
+    text-align:center;
+    font-size:small;
+    width: 30px;
+    color:#000000;
+    border:1px;
+}
+.sheet-db_input_text_center{
+    background-color: transparent; /*transparent */
+    text-align:center;
+    font-size: large;
+    width: 50px;
+    color:#000000;
+    border:0px;
+}
+
+.sheet-db_input_text_center_100{
+    background-color: transparent; /*transparent */
+    text-align:center;
+    font-size: large;
+    width: 150px;
+    color:#000000;
+    border:0px;
+}
+.sheet-db_header_text_left{
+    background-color: transparent; /*transparent */
+    text-align:left;
+    padding-top:10px;
+    padding-left:50px;
+    font-size: normal;
+    width: 180px;
+    height: 30px;
+    color:#ffffff;
+    border:0px;
+}
+.sheet-db_header_text_center{
+    background-color: transparent; /*transparent */
+    text-align:center;
+    padding-top:10px;
+    font-size: normal;
+    width: 250px;
+    color:#ffffff;
+    border:0px;
+}
+
+.sheet-db_header_text_100{
+    background-color: transparent; /*transparent */
+    text-align:left;
+    padding-top:10px;
+    padding-left:50px;
+    font-size: normal;
+    width: 100px;
+    height: 30px;
+    color:#ffffff;
+    border:0px;
+}
+.sheet-db_header_text_small_100{
+    background-color: transparent; /*transparent */
+    text-align:left;
+    padding-top:10px;
+    padding-left:50px;
+    font-size: small;
+    width: 100px;
+    height: 30px;
+    color:#ffffff;
+    border:0px;
+}
+.sheet-db_textarea{
+    width: 250px;
+    resize: none;
+}
+.sheet-db_TD_toppadding{
+    padding-top:28px;
+    text-align:center;
+}
+.sheet-db_TD_toppadding_59{
+    padding-top:59px;
+    text-align:center;
+}
+.sheet-db_TD_toppadding_59_20{
+    padding-top:59px;
+    padding-left:20px;
+    text-align:center;
+}
+
+/* PC-GridAreas*/
+/* Top of sheet, name, logo, appearance*/
+
+.sheet-leftstats{
+    grid-area:stats-left;
+}
+.sheet-db_header-image {
+    background-color: transparent; /*transparent */
+    background-image: url("https://i.imgur.com/Qwdw03W.png");
+    width: 275px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    grid-area: headerimage;
+}
+.sheet-rightstats{
+    grid-area:stats-right;
+}
+.sheet-charactername {
+    grid-area: name-middle;
+}
+.sheet-footergraphic {
+    grid-area: footer;
+}
+.sheet-leftbody {
+    grid-area: left-body;
+}
+.sheet-rightbody {
+    grid-area: right-body;
+}
+.sheet-rightbodylower {
+    text-align:left;
+    width: 250px;
+    font-size: normal;
+    background-color: transparent; /*transparent */
+    color:#000000;
+    background-image: url("https://i.imgur.com/7yPHBZm.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 250px;
+    grid-area: right-body-lower;
+}
+.sheet-leftbodylower {
+    grid-area: left-body-lower;
+}
+.sheet-middlebody {
+    grid-area: middle-body;
+}
+.sheet-willpowerbody {
+    background-color: transparent; /*transparent */
+    background-image: url("https://i.imgur.com/ydaUTVb.png");
+    width: 250px;
+    height:80px;
+    background-repeat: no-repeat;
+    background-size: 250px;
+    background-position: center center;
+    grid-area: willpower-body;
+}
+.sheet-goldbody {
+    background-color: transparent; /*transparent */
+    background-image: url("https://i.imgur.com/e1onFXl.png");
+    width: 250px;
+    height:80px;
+    background-repeat: no-repeat;
+    background-size: 250px;
+    background-position: center center;
+    grid-area: gold-body;
+}
+.sheet-HPbody {
+    background-color: transparent; /*transparent */
+    background-image: url("https://i.imgur.com/yLPk9nA.png");
+    width: 250px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: 250px;
+    background-position: center center;
+    grid-area: HP-body;
+}
+.sheet-attribs {
+    grid-area: attrib;
+}
+.sheet-weapons {
+    grid-area: weapon-body;
+}
+.sheet-armor {
+    background-color: transparent; /*transparent */
+    background-image: url("https://i.imgur.com/b7znfpE.png");
+    width: 250px;
+    height:150px;
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    grid-area: armor-body;
+}
+.sheet-helmet {
+    background-color: transparent; /*transparent */
+    background-image: url("https://i.imgur.com/ba42nzu.png");
+    width: 250px;
+    height:150px;
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    grid-area: helmet-body;
+}
+.sheet-shield {
+    background-color: transparent; /*transparent */
+    background-image: url("https://i.imgur.com/ZC2yfEj.png");
+    width: 250px;
+    height:150px;
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    grid-area: shield-body;
+}
+
+
+/*PC Sheet Layout*/
+.sheet-tabstoggle[value="main"] ~ div.sheet-main {
+    display: grid;
+    width: 845px;
+    border: 0px solid black;
+    grid-auto-flow: row;
+    grid-template-columns: [gutter] 5px [stats-left] 250px [stats-middle] 275px [stats-right] 260px [gutter] 5px;
+    grid-template-rows: [gutter] 2em [row1] auto [row2] auto [row3] auto [row4] minmax(400px,auto) [row5] auto [row6] auto [row7] minmax(100px,auto) [row8] auto  [gutter] 2em;
+    grid-template-areas:
+        ". . . . . "
+        ". stats-left headerimage stats-right ."
+        ". . name-middle . ."
+        " . attrib attrib attrib ."
+        ". left-body middle-body right-body ."
+        ". left-body-lower middle-body right-body-lower ."
+        ". willpower-body middle-body gold-body ."
+        ". HP-body weapon-body weapon-body ."
+        ". armor-body helmet-body shield-body ."
+        ". . . . . ";
+    grid-gap: 10px;
+    background-image: url("https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Vaesen/Images/vasen_background.jpg"); /*Desaturated Paper Teture*/
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+/*Attribute Roll Template*/
+/*Attribute Skill Template */
+.sheet-rolltemplate-DBSkill-roll div.sheet-db-container {
+
+	background-image: url("https://i.imgur.com/cLwU0FW.png"); /*Desaturated Paper Teture*/
+    background-size: cover;
+}
+
+.sheet-rolltemplate-DBSkill-roll .sheet-db-header{
+    text-align: center;
+    background-color: transparent;
+    background-image: url("https://i.imgur.com/e1831WK.png");    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-style:italic;
+    font-size:x-large;
+    font-weight: bold;
+    color:#FFFFFF;
+}
+
+.sheet-rolltemplate-DBSkill-roll .sheet-db-subheader{
+    text-align: center;
+    background-image: url("https://i.imgur.com/e1831WK.png");    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size:large;
+    font-style:normal;
+    color:#FFFFFF;
+
+}
+.sheet-rolltemplate-DBSkill-roll .sheet-db-results{
+    text-align: center;
+    background-color: transparent;
+    padding: 10px;
+    font-weight: bold;
+    font-size:large;
+    font-style:normal;
+    color:#422d22;
+ 
+}
+.sheet-rolltemplate-DBSkill-roll .sheet-db-footer{
+    text-align: center;
+    background-image: url("https://i.imgur.com/cYSQ4f3.png");    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size:large;
+    font-style:normal;
+    color:#FFFFFF;
+}
+
+/*Attribute Attack Template */
+
+.sheet-rolltemplate-DBAttack-roll div.sheet-db-container {
+
+	background-image: url("https://i.imgur.com/cLwU0FW.png"); /*Desaturated Paper Teture*/
+    background-size: cover;
+}
+
+.sheet-rolltemplate-DBAttack-roll .sheet-db-header{
+    text-align: center;
+    background-color: transparent;
+    background-image: url("https://i.imgur.com/e1831WK.png");    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-style:italic;
+    font-size:x-large;
+    font-weight: bold;
+    color:#FFFFFF;
+}
+
+.sheet-rolltemplate-DBAttack-roll .sheet-db-subheader{
+    text-align: center;
+    background-image: url("https://i.imgur.com/e1831WK.png");    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size:large;
+    font-style:normal;
+    color:#FFFFFF;
+}
+.sheet-rolltemplate-DBAttack-roll .sheet-db-results{
+    text-align: center;
+    background-color: transparent;
+    padding: 10px;
+    font-weight: bold;
+    font-size:large;
+    font-style:normal;
+    color:#422d22;
+}
+.sheet-rolltemplate-DBAttack-roll .sheet-db-damage{
+    text-align: center;
+    background-color: transparent;
+    padding: 10px;
+    font-weight: bold;
+    font-size:large;
+    font-style:normal;
+    color:#422d22;
+    border-top: 3px solid black;
+    border-bottom:0px solid black;
+
+}
+.sheet-rolltemplate-DBAttack-roll .sheet-db-footer{
+    text-align: center;
+    background-image: url("https://i.imgur.com/cYSQ4f3.png");    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size:large;
+    font-style:normal;
+    color:#FFFFFF;
+}
+
+
+
+
+
+.sheet-rolltemplate-vaesen-attrib div.sheet-vaesen-container {
+	border: 2px solid #000 !important;
+	border-radius: 3px 3px 3px 3px;
+	background-image: url("https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Vaesen/Images/vasen_background.jpg"); /*Desaturated Paper Teture*/
+  background-size: cover;
+}
+
+.sheet-rolltemplate-vaesen-attrib .sheet-vaesen-type{
+    text-align: center;
+	padding: 5px;
+	font-style: bold;
+}
+.sheet-rolltemplate-vaesen-attrib .sheet-vaesen-result{
+    background-color: #993300;
+	color: #000;
+	font-style:italic;
+    font-size:large;
+    text-align:center;
+
+}
+
+/*Skill Roll Template*/
+.sheet-rolltemplate-vaesen-skill div.sheet-vaesen-container {
+	border: 2px solid #000 !important;
+	border-radius: 3px 3px 3px 3px;
+	background-image: url("https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Vaesen/Images/vasen_background.jpg"); /*Desaturated Paper Teture*/
+  background-size: cover;
+}
+
+.sheet-rolltemplate-vaesen-skill .sheet-vaesen-header{
+    text-align: center;
+    background-color: transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-style:italic;
+    font-size:x-large;
+    font-weight: bold;
+    color:#422d22;
+}
+.sheet-rolltemplate-vaesen-skill .sheet-vaesen-subheader{
+    text-align: center;
+    background-color: #f6a479;
+    padding: 5px;
+    font-weight: bold;
+    font-size:large;
+    font-style:normal;
+    color:#422d22;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.sheet-rolltemplate-vaesen-skill .sheet-vaesen-type{
+    text-align: center;
+	padding: 5px;
+	font-style: bold;
+}
+.sheet-rolltemplate-vaesen-skill .sheet-vaesen-result{
+    background-color: #993300;
+	color: #000;
+	font-style:italic;
+    font-size:large;
+    text-align:center;
+}
+
+
+.sheet-rolltemplate-vaesen-attack .sheet-vaesen-header{
+    text-align: center;
+    background-color: transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-style:italic;
+    font-size:x-large;
+    font-weight: bold;
+    color:#422d22;
+}
+.sheet-rolltemplate-vaesen-attack .sheet-vaesen-subheader{
+    text-align: center;
+    background-color: #f6a479;
+    padding: 5px;
+    font-weight: bold;
+    font-size:large;
+    font-style:normal;
+    color:#422d22;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.sheet-rolltemplate-vaesen-attack .sheet-vaesen-type{
+    text-align: center;
+	padding: 5px;
+	font-style: bold;
+}
+.sheet-rolltemplate-vaesen-attack .sheet-vaesen-result{
+    background-color: #993300;
+	color: #000;
+	font-style:italic;
+    font-size:large;
+    text-align:center;
+
+}
+/*Repeating Setions*/
+.repcontrol {
+    display: flex;
+    margin-top: 3px;
+}
+  
+.repcontrol .repcontrol_edit {
+    margin-left: auto;
+    order: 1;
+}
+  
+.repcontrol button {
+    background: transparent;
+    color: #555;
+    border-radius: 0;
+    border-color: #999;
+    transition: all 0.2s;
+    font-family: pictos;
+    font-size: 0;
+    font-weight: bold;
+    padding: 5px 3px 2px;
+    line-height: 8px;
+}
+  
+.repcontrol button:hover {
+    color: green;
+    border-color: green;
+    background: #ddd;
+}
+  
+.repcontrol button.repcontrol_edit::after {
+    content: "(";
+}
+  
+.repcontrol button.repcontrol_add::after {
+    content: "&";
+}
+  
+.repcontrol button.repcontrol_edit::after, .repcontrol button.repcontrol_add::after {
+    font-size: 20px;
+}
+  
+.repcontainer.editmode + .repcontrol button.repcontrol_edit::after {
+    content: ")";
+}
+
+.itemcontrol {
+    z-index: 20;
+}
+
+
+
+/*Roll Button Styling*/
+
+/*Basic d6 Vaesen Roll Button */
+button[type="roll"].sheet-vaesendie:before{
+    content: '';
+}
+
+button[type="roll"].sheet-vaesendie{
+  background-image: url("https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Vaesen/Images/vaesendie.png"); 
+  background-size: 26px 26px;
+  background-repeat: no-repeat;
+  width: 26px;
+  height: 26px;
+  border-style: none;
+  background-color: transparent;
+  margin-left: 5px;
+  background-position: 0;
+}
+button[type="roll"].sheet-vaesendie:hover{
+    background-position: 0;
+    background-image: url("https://i.imgur.com/mNZBIFR.png"); 
+    background-color: transparent;
+}
+button[type="roll"].sheet-vaesendie:active{
+    background-position: 0;
+    background-image: url("https://i.imgur.com/4DAXFM7.png"); 
+    background-color: transparent;
+}
+
+
+/*Basic d66 Vaesen Roll Button */
+button[type="roll"].sheet-vaesend66:before{
+    content: '';
+}
+
+button[type="roll"].sheet-vaesend66{
+  background-image: url("https://i.imgur.com/c82KF2h.png"); 
+  background-size: 41px 26px;
+  background-repeat: no-repeat;
+  width: 41px;
+  height: 26px;
+  border-style: none;
+  background-color: transparent;
+  margin-left: 5px;
+  background-position: 0;
+}
+button[type="roll"].sheet-vaesend66:hover{
+    background-position: 0;
+    background-image: url("https://i.imgur.com/yauwICZ.png"); 
+    background-color: transparent;
+}
+button[type="roll"].sheet-vaesend66:active{
+    background-position: 0;
+    background-image: url("https://i.imgur.com/mZSnDi6.png"); 
+    background-color: transparent;
+}
+

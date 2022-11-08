@@ -1,0 +1,529 @@
+<div>
+    <button type="action" name="act_main">PC</button>
+</div>
+
+<input type="hidden" class="sheet-tabstoggle" name="attr_sheetTab" value="main">
+
+<div class="sheet-main">
+    
+    <div class="leftstats">
+        <br><BR>
+        <input class="db_text_250" Type="text" name="attr_Age"><label class="db_attriblabel">Age</label>
+        <input class="db_text_250" Type="text" name="attr_kin"><label class="db_attriblabel">Kin</label>
+        <input class="db_text_250" type="text" name="attr_profession"><Label class="db_attriblabel">Profession</Label>
+        <input class="db_text_250" type="text" name="attr_motivation"><Label class="db_attriblabel">Motivation</Label>
+    </div>
+
+    <div class="db_header-image">
+    </div>
+
+    <div class="rightstats">
+        <br><BR>
+        <textarea class="db_textarea" Type="textarea" name="attr_trauma"></textarea><Label class="db_attriblabel">Appearance</Label>
+    </div>
+
+    <div class="charactername">
+        <input class="db_nametext"  Type="text" name="attr_character_name"><label class="attriblabel">Name</label>
+    </div>
+    <div class="attribs">
+        <table align="center" width="525px">
+            <tr padding="20px">
+                <TD align="center">
+                    <input class="db_text_30" type="text" name="attr_strength">
+                    <button type="roll"  value="&{template:DBSkill-roll}{{playername=@{character_name}}}{{skillname=Strength}}{{skillvalue=@{strength}}}{{roll1=[[1d20]]}}{{roll2=[[1d20]]}}" name="roll_check"></button>
+                    <Br>
+                    <P>STR
+                    </P>
+                    <input class="db_checkbox-small" type="checkbox" name="attr_strcon"><br>
+                    Dazed
+                </TD>
+                <TD align="center">
+                    <input class="db_text_30" type="text" name="attr_con">
+                    <button type="roll"  value="&{template:DBSkill-roll}{{playername=@{character_name}}}{{skillname=Constitution}}{{skillvalue=@{con}}}{{roll1=[[1d20]]}}{{roll2=[[1d20]]}}" name="roll_check"></button>
+                    <Br>
+                    <P>CON</P>
+                    <input class="db_checkbox-small" type="checkbox" name="attr_concon"><br>
+                    Sickly
+                </TD>
+                <TD align="center">
+                    <input class="db_text_30" type="text" name="attr_agility">
+                    <button type="roll"  value="&{template:DBSkill-roll}{{playername=@{character_name}}}{{skillname=Agility}}{{skillvalue=@{agility}}}{{roll1=[[1d20]]}}{{roll2=[[1d20]]}}" name="roll_check"></button>
+                    <Br>
+                    <P>AGL</P>
+                    <input class="db_checkbox-small" type="checkbox" name="attr_aglcon"><br>
+                    Exhausted
+                </TD>
+                <TD align="center">
+                    <input class="db_text_30" type="text" name="attr_intelligence">
+                    <button type="roll"  value="&{template:DBSkill-roll}{{playername=@{character_name}}}{{skillname=Intelligence}}{{skillvalue=@{intelligence}}}{{roll1=[[1d20]]}}{{roll2=[[1d20]]}}" name="roll_check"></button>
+                    <Br>
+                    <P>INT</P>
+                    <input class="db_checkbox-small" type="checkbox" name="attr_intcon"><br>
+                    Angry
+                </TD>
+                <TD align="center">
+                    <input class="db_text_30" type="text" name="attr_willpower">
+                    <button type="roll"  value="&{template:DBSkill-roll}{{playername=@{character_name}}}{{skillname=Willpower}}{{skillvalue=@{willpower}}}{{roll1=[[1d20]]}}{{roll2=[[1d20]]}}" name="roll_check"></button>
+                    <Br>
+                    <P>WIL</P>
+                    <input class="db_checkbox-small" type="checkbox" name="attr_wilcon"><br>
+                    Scared
+                </TD>
+                <TD align="center">
+                    <input class="db_text_30" type="text" name="attr_charisma">
+                    <button type="roll"  value="&{template:DBSkill-roll}{{playername=@{character_name}}}{{skillname=charisma}}{{skillvalue=@{charisma}}}{{roll1=[[1d20]]}}{{roll2=[[1d20]]}}" name="roll_check"></button>
+                    <Br>
+                    <P>CHA</P>
+                    <input class="db_checkbox-small" type="checkbox" name="attr_chacon"><br>
+                    Dirty
+                </TD>
+            </tr>
+        </table>
+    </div>
+
+    <div class="leftbody">
+        <label class="db_header">
+            <table>
+                <tr>
+                    <td>
+                        <label class="db_header_text_small_100" disabled>Str Dmg Bonus</label>
+                    </td>
+                    <td>
+                        <select class="db_text_50" name="attr_strdmgbonus">
+                            <option value="d4" >d4</option>
+                            <option value="d6" >d6</option>
+                            <option value="d8" >d8</option>
+                            <option value="d10" >d10</option>
+                            <option value="d12" >d12</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </label>
+        <label class="db_header">
+            <label class="db_header_text_center">Abilities & Spells</label>
+            <fieldset class="repeating_Avbilities">
+                <input class="db_text_250" type="text" name="attr_Ability" >
+            </fieldset>
+    </div>
+
+    <div class="middlebody">
+        <label class="db_header_wide">
+            <table>
+                <tr>
+                    <td>
+                        <label class="db_header_text_small_100" >Agi Dmg Bonus</label>
+                    </td>
+                    <td>
+                        <select class="db_text_50" name="attr_agidmgbonus">
+                            <option value="d4" >d4</option>
+                            <option value="d6" >d6</option>
+                            <option value="d8" >d8</option>
+                            <option value="d10" >d10</option>
+                            <option value="d12" >d12</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </label>
+        <label class="db_header_wide">
+            <label class="db_header_text_center">Skills</label>
+            <input class="db_checkbox-small" type="checkbox" name="attr_axesprof">
+            <input class="db_skill_text_30" type="text" name="attr_axesskill">
+            <input class="db_skill_text_125" type="text" name="attr_axes" value="Axes" disabled >
+            <input class="db_skill_text_50" type="text" name="attr_axesattrib" value="Str" >
+            <button type="roll"  value="&{template:DBSkill-roll}{{playername=@{character_name}}}{{skillname=Axes}}{{skillvalue=@{axesskill}}}{{roll1=[[1d20]]}}{{roll2=[[1d20]]}}" name="roll_check"></button>
+
+            <input class="db_checkbox-small" type="checkbox" name="attr_bluntweaponsprof">
+            <input class="db_skill_text_30" type="text" name="attr_bluntweaponsskill">
+            <input class="db_skill_text_125" type="text" name="attr_bluntweapons" value="Blunt Weapons" disabled >
+            <input class="db_skill_text_50" type="text" name="attr_bluntweaponsattrib" value="Str" >
+            <button type="roll"  value="&{template:DBSkill-roll}{{playername=@{character_name}}}{{skillname=Blunt Weapons}}{{skillvalue=@{bluntweaponsskill}}}{{roll1=[[1d20]]}}{{roll2=[[1d20]]}}" name="roll_check"></button>
+
+            <input class="db_checkbox-small" type="checkbox" name="attr_brawlingprof">
+            <input class="db_skill_text_30" type="text" name="attr_brawlingskill">
+            <input class="db_skill_text_125" type="text" name="attr_brawling" value="Brawling" disabled >
+            <input class="db_skill_text_50" type="text" name="attr_brawlingattrib" value="Str" >
+            <button type="roll"  value="&{template:DBSkill-roll}{{playername=@{character_name}}}{{skillname=Brawling}}{{skillvalue=@{Brawlingskill}}}{{roll1=[[1d20]]}}{{roll2=[[1d20]]}}" name="roll_check"></button>
+
+            <input class="db_checkbox-small" type="checkbox" name="attr_knivesprof">
+            <input class="db_skill_text_30" type="text" name="attr_knivesskill">
+            <input class="db_skill_text_125" type="text" name="attr_knives" value="Knives" disabled >
+            <input class="db_skill_text_50" type="text" name="attr_knivesattrib" value="Agl" >
+            <button type="roll"  value="&{template:DBSkill-roll}{{playername=@{character_name}}}{{skillname=Knives}}{{skillvalue=@{Knivesskill}}}{{roll1=[[1d20]]}}{{roll2=[[1d20]]}}" name="roll_check"></button>
+
+            <input class="db_checkbox-small" type="checkbox" name="attr_marksmanshipprof">
+            <input class="db_skill_text_30" type="text" name="attr_marksmanshipskill">
+            <input class="db_skill_text_125" type="text" name="attr_marksmanship" value="Marksmanship" disabled >
+            <input class="db_skill_text_50" type="text" name="attr_marksmanshipattrib" value="Agl" >
+            <button type="roll"  value="&{template:DBSkill-roll}{{playername=@{character_name}}}{{skillname=Marksmanship}}{{skillvalue=@{marksmanshipskill}}}{{roll1=[[1d20]]}}{{roll2=[[1d20]]}}" name="roll_check"></button>
+
+            <input class="db_checkbox-small" type="checkbox" name="attr_spearsprof">
+            <input class="db_skill_text_30" type="text" name="attr_spearsskill">
+            <input class="db_skill_text_125" type="text" name="attr_spears" value="Spears" disabled >
+            <input class="db_skill_text_50" type="text" name="attr_spearsattrib" value="Str" >
+            <button type="roll"  value="&{template:DBSkill-roll}{{playername=@{character_name}}}{{skillname=Spears}}{{skillvalue=@{spearsskill}}}{{roll1=[[1d20]]}}{{roll2=[[1d20]]}}" name="roll_check"></button>
+
+            <input class="db_checkbox-small" type="checkbox" name="attr_swordsprof">
+            <input class="db_skill_text_30" type="text" name="attr_swordsskill">
+            <input class="db_skill_text_125" type="text" name="attr_swords" value="Swords" disabled >
+            <input class="db_skill_text_50" type="text" name="attr_swordsattrib" value="Str" >
+            <button type="roll"  value="&{template:DBSkill-roll}{{playername=@{character_name}}}{{skillname=Swords}}{{skillvalue=@{swordsskill}}}{{roll1=[[1d20]]}}{{roll2=[[1d20]]}}" name="roll_check"></button>
+
+            <img src="https://i.imgur.com/cYSQ4f3.png">
+
+            <input class="db_checkbox-small" type="checkbox" name="attr_healingprof">
+            <input class="db_skill_text_30" type="text" name="attr_healingskill">
+            <input class="db_skill_text_125" type="text" name="attr_healing" value="Healing" disabled >
+            <input class="db_skill_text_50" type="text" name="attr_healingattrib" value="Int" >
+            <button type="roll"  value="&{template:DBSkill-roll}{{playername=@{character_name}}}{{skillname=Healing}}{{skillvalue=@{healingskill}}}{{roll1=[[1d20]]}}{{roll2=[[1d20]]}}" name="roll_check"></button>
+
+            <input class="db_checkbox-small" type="checkbox" name="attr_learningprof">
+            <input class="db_skill_text_30" type="text" name="attr_learningskill">
+            <input class="db_skill_text_125" type="text" name="attr_learning" value="Learning" disabled >
+            <input class="db_skill_text_50" type="text" name="attr_learningattrib" value="Int" >
+            <button type="roll"  value="&{template:DBSkill-roll}{{playername=@{character_name}}}{{skillname=Learning}}{{skillvalue=@{learningskill}}}{{roll1=[[1d20]]}}{{roll2=[[1d20]]}}" name="roll_check"></button>
+
+            <input class="db_checkbox-small" type="checkbox" name="attr_mobilityprof">
+            <input class="db_skill_text_30" type="text" name="attr_mobilityskill">
+            <input class="db_skill_text_125" type="text" name="attr_mobility" value="Mobility" disabled >
+            <input class="db_skill_text_50" type="text" name="attr_mobilityattrib" value="Agl" >
+            <button type="roll"  value="&{template:DBSkill-roll}{{playername=@{character_name}}}{{skillname=Mobility}}{{skillvalue=@{mobilityskill}}}{{roll1=[[1d20]]}}{{roll2=[[1d20]]}}" name="roll_check"></button>
+
+            <input class="db_checkbox-small" type="checkbox" name="attr_persuasionprof">
+            <input class="db_skill_text_30" type="text" name="attr_persuasionskill">
+            <input class="db_skill_text_125" type="text" name="attr_persuasion" value="Persuasion" disabled >
+            <input class="db_skill_text_50" type="text" name="attr_persuasionattrib" value="Cha" >
+            <button type="roll"  value="&{template:DBSkill-roll}{{playername=@{character_name}}}{{skillname=Persuasion}}{{skillvalue=@{persuasionskill}}}{{roll1=[[1d20]]}}{{roll2=[[1d20]]}}" name="roll_check"></button>
+
+            <input class="db_checkbox-small" type="checkbox" name="attr_scoutingprof">
+            <input class="db_skill_text_30" type="text" name="attr_scoutingskill">
+            <input class="db_skill_text_125" type="text" name="attr_scouting" value="Scouting" disabled >
+            <input class="db_skill_text_50" type="text" name="attr_scoutingattrib" value="Int" >
+            <button type="roll"  value="&{template:DBSkill-roll}{{playername=@{character_name}}}{{skillname=Scouting}}{{skillvalue=@{scoutingskill}}}{{roll1=[[1d20]]}}{{roll2=[[1d20]]}}" name="roll_check"></button>
+
+            <input class="db_checkbox-small" type="checkbox" name="attr_sleightofhandprof">
+            <input class="db_skill_text_30" type="text" name="attr_sleightofhandskill">
+            <input class="db_skill_text_125" type="text" name="attr_sleightofhand" value="Sleight of Hand" disabled >
+            <input class="db_skill_text_50" type="text" name="attr_sleightofhandattrib" value="Agl" >
+            <button type="roll"  value="&{template:DBSkill-roll}{{playername=@{character_name}}}{{skillname=Sleight of Hand}}{{skillvalue=@{sleightofhandskill}}}{{roll1=[[1d20]]}}{{roll2=[[1d20]]}}" name="roll_check"></button>
+
+            <input class="db_checkbox-small" type="checkbox" name="attr_sneakingprof">
+            <input class="db_skill_text_30" type="text" name="attr_sneakingskill">
+            <input class="db_skill_text_125" type="text" name="attr_Sneaking" value="Sneaking" disabled >
+            <input class="db_skill_text_50" type="text" name="attr_sneakingattrib" value="Agl" >
+            <button type="roll"  value="&{template:DBSkill-roll}{{playername=@{character_name}}}{{skillname=Sneaking}}{{skillvalue=@{sneakingskill}}}{{roll1=[[1d20]]}}{{roll2=[[1d20]]}}" name="roll_check"></button>
+
+            <input class="db_checkbox-small" type="checkbox" name="attr_spothiddenprof">
+            <input class="db_skill_text_30" type="text" name="attr_spothiddenskill">
+            <input class="db_skill_text_125" type="text" name="attr_Spot-Hidden" value="Spot Hidden" disabled >
+            <input class="db_skill_text_50" type="text" name="attr_spothiddenattrib" value="Int" >
+            <button type="roll"  value="&{template:DBSkill-roll}{{playername=@{character_name}}}{{skillname=spothidden}}{{skillvalue=@{spothiddenskill}}}{{roll1=[[1d20]]}}{{roll2=[[1d20]]}}" name="roll_check"></button>
+
+            <input class="db_checkbox-small" type="checkbox" name="attr_survivalprof">
+            <input class="db_skill_text_30" type="text" name="attr_survivalskill">
+            <input class="db_skill_text_125" type="text" name="attr_Survival" value="survival" disabled >
+            <input class="db_skill_text_50" type="text" name="attr_survivalattrib" value="Int" >
+            <button type="roll"  value="&{template:DBSkill-roll}{{playername=@{character_name}}}{{skillname=survival}}{{skillvalue=@{survivalskill}}}{{roll1=[[1d20]]}}{{roll2=[[1d20]]}}" name="roll_check"></button>
+
+            <img src="https://i.imgur.com/zahBSoZ.png">
+    </div>
+
+    <div class="rightbody">
+        <label class="db_header">
+            <table>
+                <tr>
+                    <td>
+                        <label class="db_header_text_small_100" >Movement</label>
+                    </td>
+                    <td>
+                        <input class="db_text_30" type="text" name="attr_movement">
+                    </td>
+                </tr>
+            </table>
+        </label>
+        <label class="db_header">
+            <table>
+                <tr>
+                    <td>
+                        <label class="db_header_text_100" >Inventory</label>
+                    </td>
+                    <td>
+                        <input class="db_text_30" type="text" name="attr_encumbrance" value="[[@{strength}/2]]" disabled>
+                    </td>
+                </tr>
+            </table>
+        </label>
+        <fieldset class="repeating_inventory">
+            <input class="db_text_200" type="text" name="attr_Inventory" >
+            <input class="db_text_30" type="text" name="attr_encvalue"  >
+        </fieldset>
+    </div>
+
+    <div class="rightbodylower">
+        <textarea class="db_tinyitems"></textarea>
+    </div>
+    
+    <div class="leftbodylower">
+        <label class="db_header">
+            <label class="db_header_text_center">Magic Schools</label>
+            <fieldset class="repeating_Spells">
+                <input class="db_text_200" type="text" name="attr_spells" >
+                <input class="db_text_30" type="text" name="attr_spelllevel"  >
+            </fieldset>
+        </label>
+    </div>
+
+    <div class="willpowerbody">
+        <table>
+            <tr>
+                <td align="center">
+                    <label class="db_header_text_center" >Willpower</label>
+                    <input class="db_input_text_center" type="text" name="attr_currentwill">/<input class="db_input_text_center" type="text" name="attr_maxwill" readonly>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="HPbody">
+        <table>
+            <tr>
+                <td align="center">
+                    <label class="db_header_text_center" >Hit Points</label>
+                    <input class="db_input_text_center" type="text" name="attr_currentHP">/<input class="db_input_text_center" type="text" name="attr_maxHP" readonly>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <div align="center">
+            Rest: <button type="action" name="act_stretchrest">Stretch</button>
+            <input class="db_checkbox-small" type="checkbox" name="attr_stretchtaken">
+            <button type="action" name="act_shiftrest">Shift</button><br>
+        </div>
+    </div>
+
+    <div class="goldbody">
+        <table width="250px">
+            <tr>
+                <td class="db_TD_toppadding">
+                    <input class="db_input_text_center" type="text" name="attr_copper">
+                </td>
+                <td class="db_TD_toppadding">
+                    <input class="db_input_text_center" type="text" name="attr_silver">
+                </td>
+                <td class="db_TD_toppadding">
+                    <input class="db_input_text_center" type="text" name="attr_gold">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="weapons">
+        <fieldset class="repeating_weapons">
+            <button type="roll"  value="&{template:DBAttack-roll}{{playername=@{character_name}}}{{skillname=@{weaponname}}}{{skillvalue=@{skilltype}}}{{roll1=[[1d20]]}}{{roll2=[[1d20]]}}{{damage=[[@{dmg}+@{bonusdie}]]}}" name="attack_check"></button>
+            <input class="db_checkbox-small" type="checkbox" name="attr_weaponequ">
+            <input class="db_text_110" type="text" name="attr_weaponname" >
+            <select class="db_text_75" type="text" name="attr_skilltype"  >
+                <option value="@{axesskill}" >Axes</option>
+                <option value="@{bluntweaponsskill}" >Blunt</option>
+                <option value="@{Brawlingskill}" >Brawl</option>
+                <option value="@{Knivesskill}" >Knives</option>
+                <option value="@{marksmanshipskill}" >Marks</option>
+                <option value="@{spearsskill}" >Spears</option>
+                <option value="@{swordsskill}" >Swords</option>
+            </select>
+            <select class="db_text_50" type="text" name="attr_bonusdie" hidden >
+                <option value="d4" >d4</option>
+                <option value="d6" >d6</option>
+                <option value="d8" >d8</option>
+                <option value="d10" >d10</option>
+                <option value="d12" >d12</option>
+            </select>
+             <select class="db_text_50" type="text" name="attr_grip"  >
+                <option value="" >1h</option>
+                <option value="" >2h</option>
+            </select>
+            <input class="db_text_30" type="text" name="attr_range"  >
+            <input class="db_text_40" type="text" name="attr_dmg"  >
+            <input class="db_text_30" type="text" name="attr_durability"  >
+            <input class="db_text_100" type="text" name="attr_features" >
+        </fieldset>
+    </div>
+
+    <div class="armor">
+        <table width="250px">
+            <tr>
+                <td class="db_TD_toppadding_59_20">
+                    <input class="db_input_text_center" type="text" name="attr_armorvalue">  
+                </td>
+                <td class="db_TD_toppadding_59">
+                    <input class="db_input_text_center_100" type="text" name="attr_armortype">  
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="helmet">
+        <table width="250px">
+            <tr>
+                <td class="db_TD_toppadding_59_20">
+                    <input class="db_input_text_center" type="text" name="attr_helmetvalue">  
+                </td>
+                <td class="db_TD_toppadding_59">
+                    <input class="db_input_text_center_100" type="text" name="attr_helmettype">  
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="shield">
+        <table width="250px">
+            <tr>
+                <td class="db_TD_toppadding_59_20">
+                    <input class="db_input_text_center" type="text" name="attr_shielddurability">  
+                </td>
+                <td class="db_TD_toppadding_59">
+                    <input class="db_input_text_center_100" type="text" name="attr_shieldtype">  
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<rolltemplate class="sheet-rolltemplate-DBSkill-roll">
+<div class="sheet-db-container">
+    <div class="sheet-db-header">
+        {{playername}}
+    </div>
+    <div class="sheet-db-subheader">
+        {{skillname}} - {{skillvalue}}
+    </div>
+    <div class="sheet-db-results">
+        {{roll1}}  ({{roll2}})
+    </div>
+    <div class="sheet-db-footer">
+    </div>
+</div>
+</rolltemplate>
+
+<rolltemplate class="sheet-rolltemplate-DBAttack-roll">
+    <div class="sheet-db-container">
+        <div class="sheet-db-header">
+            {{playername}}
+        </div>
+        <div class="sheet-db-subheader">
+            {{skillname}} - {{skillvalue}}
+        </div>
+        <div class="sheet-db-results">
+            Roll: {{roll1}} ({{roll2}})
+        </div>
+        <div class="sheet-db-damage">
+            Damage: {{damage}}
+        </div>
+        <div class="sheet-db-footer">
+        </div>
+    </div>
+    </rolltemplate>
+
+</rolltemplate>
+
+<script type="text/worker">
+
+const buttonlist = ["main","Vaesen","NPC","HQ"];
+const updatelist = ["con","willpower"];
+const agilityweapons = ["@{marksmanshipskill}","@{Knivesskill}"];
+
+on("clicked:shiftrest", function(eventInfo){
+    getAttrs(["maxHP","maxwill"], function(values){
+        let newhp=parseInt(values.maxHP)||0;
+        let newwill=parseInt(values.maxwill)||0;
+        console.log("====SHIFT RESTING====");
+        console.log(newhp);
+        console.log(newwill);
+
+        setAttrs({
+            "currentHP":newhp,
+            "currentwill":newwill,
+            "strcon":0,
+            "concon":0,
+            "aglcon":0,
+            "intcon":0,
+            "wilcon":0,
+            "chacon":0,
+            "stretchtaken":0
+        });
+    });
+});
+on("clicked:stretchrest", function(eventInfo){
+    getAttrs(["currentHP","currentwill","maxHP","maxwill","stretchtaken"], function(values){
+        let taken=parseInt(values.stretchtaken)||0
+        let maxhp=parseInt(values.maxHP)||0;
+        let maxwill=parseInt(values.maxwill)||0;
+        let currenthp=parseInt(values.currentHP)||0;
+        let currentwill=parseInt(values.currentwill)||0;
+
+        console.log("====STRETCH RESTING====");
+        console.log(taken);
+        if (taken==0){
+            console.log("==Resting==")
+            let HPrest=Math.floor(Math.random()*6)+1;
+            let newhp=currenthp+HPrest;
+            
+            if (newhp>maxhp){
+                newhp=maxhp;
+            }
+            let will1=Math.floor(Math.random()*6)+1;
+            let will2=Math.floor(Math.random()*6)+1;
+            let newwill=currentwill+will1+will2;
+            if (newwill>maxwill){
+                newwill=maxwill;
+            }
+                setAttrs({
+                    "currenthp":newhp,
+                    "currentwill":newwill,
+                    "stretchtaken":1
+                });
+       } else {
+        console.log("==Already taken==")
+       }
+    });
+});
+
+updatelist.forEach(attrib => {
+    on(`change:${attrib}`, function(){
+        getAttrs(["con","willpower","maxHP","maxwill"], function(values){
+            let newhp=parseInt(values.con)||0;
+            let newwill=parseInt(values.willpower)||0;
+            console.log("====Updating======");
+            console.log(newhp);
+            console.log(newwill);
+            setAttrs({
+                "maxHP":newhp,
+                "maxwill":newwill
+            });
+        });
+    });
+});
+
+on("change:repeating_weapons:skilltype", function(eventInfo) {
+    getAttrs(["repeating_weapons_skilltype","repeating_weapons_bonusdie","agidmgbonus","strdmgbonus"], function(values){
+        let skill=values.repeating_weapons_skilltype;
+        let aglbonus=values.agidmgbonus;
+        let strbonus=values.strdmgbonus;
+        console.log("Setting Damage Bonus");
+        let bonus=0;
+ 
+        if (agilityweapons.includes(skill)){
+            console.log("bonus: "+aglbonus);
+            bonus=aglbonus;
+        } else {
+            console.log("bonus: "+strbonus);
+            bonus=strbonus;    
+        }
+        setAttrs({
+            "repeating_weapons_bonusdie":bonus
+        });
+    });
+    });
+
+</script>
